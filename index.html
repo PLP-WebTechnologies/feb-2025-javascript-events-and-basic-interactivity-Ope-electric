@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 JavaScript Event Playground 🎉</h1>
+  </header>
+
+  <!-- Button Click -->
+  <section>
+    <button id="colorBtn">Click Me to Change Color</button>
+  </section>
+
+  <!-- Hover Effect -->
+  <section>
+    <div id="hoverBox">Hover over me!</div>
+  </section>
+
+  <!-- Keypress Detection -->
+  <section>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <p id="keyResult"></p>
+  </section>
+
+  <!-- Secret Double Click -->
+  <section>
+    <button id="secretBtn">Double Click Me 🤫</button>
+    <p id="secretMessage"></p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section>
+    <img id="galleryImage" src="https://via.placeholder.com/300" alt="Gallery" />
+    <br />
+    <button onclick="changeImage()">Next Image</button>
+  </section>
+
+  <!-- Accordion -->
+  <section>
+    <button class="accordion">Click to Toggle Content</button>
+    <div class="panel">
+      <p>This is hidden accordion content!</p>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <form id="myForm">
+      <h2>Sign Up Form</h2>
+      <label>Email: <input type="email" id="email" required /></label><br />
+      <label>Password: <input type="password" id="password" required /></label><br />
+      <button type="submit">Submit</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
